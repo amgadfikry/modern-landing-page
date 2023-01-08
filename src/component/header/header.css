@@ -1,0 +1,92 @@
+.header{
+    background:-moz-radial-gradient(circle at 0% 0%, var(--background-gradient-color) 0%, var(--background-color) 47%);
+    background:-webkit-radial-gradient(circle at 0% 0%, var(--background-gradient-color) 0%, var(--background-color) 47%);
+    background:-o-radial-gradient(circle at 0% 0%, var(--background-gradient-color) 0%, var(--background-color) 47%);
+    background:-ms-radial-gradient(circle at 0% 0%, var(--background-gradient-color) 0%, var(--background-color) 47%);
+    background:radial-gradient(circle at 0% 0%, var(--background-gradient-color) 0%, var(--background-color) 47%);
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+.main .content{
+    margin-bottom: 30px;
+}
+.main .content h1{
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.main .content p{
+    font-size: 1rem;
+    color: var(--light-blue-color);
+    margin-bottom: 30px;
+}
+.main .content form{
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .content input, .main .content .btn{
+    padding: 15px 15px;
+    font-size: 1rem;
+    border-radius: 0;
+}
+.main .content input{
+    border: 0;
+    outline: 0;
+    color:var(--light-blue-color);
+    width: 70%;
+    background-color: var(--background-gradient-color);
+}
+.main .content input::placeholder{
+    color:var(--light-blue-color);
+}
+.main .content .btn{
+    width: 30%;
+}
+.main .content .people{
+    display: flex;
+    align-items: center;
+}
+.main .content .people p{
+    color: var(--white-color);
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    
+}
+.main .content .people img{
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-right: 10px;
+}
+.main .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width:992px){
+    .main{
+        flex-direction: row;
+        align-items: center;
+    }
+    .main .content{
+        margin-bottom: 0;
+        flex: 1;
+    }
+    .main .content h1{
+        font-size: 2rem;
+    }
+    .main .content p{
+        font-size: 0.8rem;
+    }
+    .main .image{
+        flex: 1;
+    }
+}

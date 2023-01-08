@@ -1,0 +1,108 @@
+
+.navbar{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    padding: 0 10px;
+}
+.navbar .logo{
+    flex: 1;
+}
+.navbar .logo img{
+    width: 20%;
+    height: auto;
+    display: block;
+}
+.navbar .menu{
+    overflow: hidden;
+    flex: 1;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    top: 100%;
+    background:radial-gradient(circle at 0% 50%, var(--background-gradient-color) 0%, var(--background-color) 80%);
+    transition: 0.3s linear;
+    transform: translateX(100%);
+}
+.navbar .menu-active{
+    transform: translateX(0);
+    transition: 0.3s linear;
+}
+.navbar .menu .menu-item{
+    list-style-type: none;
+    padding: 10px 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.navbar .menu .menu-item:hover{
+    background-color: var(--background-gradient-color);
+}
+.navbar .menu .menu-item .menu-link{
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--white-color);
+    padding: 0 5px;
+    font-size: 0.9rem;
+}
+.navbar .menu .buttons{
+    width: 100%;
+    /* border-top: 1px solid var(--orange-color); */
+}
+.navbar .menu .buttons .btn{
+    padding: 10px 10px;
+    width: 50%;
+    border-radius: 0;
+    transition: 0.2s;
+}
+.navbar .menu .buttons .transperent-btn{
+    background-color: transparent;   
+}
+.navbar .menu .buttons .transperent-btn:hover{
+    background-color: var(--background-gradient-color);
+}
+.navbar .menu .buttons .colored-btn:hover{
+    background-color: var(--background-gradient-color);
+}
+.navbar .icons{
+    display: block;
+    color: var(--white-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+@media (min-width:768px){
+    .navbar .menu{
+        flex: 4;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border-radius: 0;
+        right: 0;
+        top: 0;
+        position: relative;
+        transform: translateX(0%);
+    }
+    .navbar .logo img{
+        width: 50%;
+    }
+    .navbar .menu .menu-item{
+        margin-right: 10px;
+        margin-bottom: 0;
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+    .navbar .menu .buttons{
+        margin-left: auto;
+        width: auto;
+        border-top: 0;
+    }
+    .navbar .menu .buttons .btn{
+        width: auto;
+        border-radius: 3px;
+    }
+    .navbar .icons{
+        display: none;
+    }
+}

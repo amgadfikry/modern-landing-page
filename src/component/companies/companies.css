@@ -1,0 +1,18 @@
+.companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.companies img{
+    display: block;
+    height: auto;
+    width: 20%;
+    padding: 10px;
+}
+@media (min-width:992px){
+    .companies img{
+        width: 12%;
+    }
+}

@@ -1,0 +1,53 @@
+.imagine{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    margin-bottom: 70px;
+}
+.imagine .image{
+    order: 2;
+}
+.imagine .image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.imagine .content{
+    text-align: center;
+    margin:0 auto 50px;
+    width: 80%;
+}
+.imagine .content p.above{
+    color: var(--light-blue-color);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+.imagine .content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.imagine .content p.para{
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    color: var(--light-blue-color);
+}
+.imagine .content p.below{
+    font-size: 0.8rem;
+}
+@media(min-width:992px){
+    .imagine{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .imagine .image{
+        flex: 1;
+        padding-right: 10px;
+    }
+    .imagine .content{
+        flex: 1;
+        order: 2;
+        text-align: left;
+        padding-right: 100px;
+    }
+}

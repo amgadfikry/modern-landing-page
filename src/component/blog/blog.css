@@ -1,0 +1,100 @@
+.blog-section{
+    padding: 30px 10px ;
+    margin-bottom: 80px;
+}
+.blog-section h3{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 60px;
+}
+.blog-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.blog{
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.blog:hover{
+    transform: scale(1.02); 
+}
+.blog .image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.blog .content{
+    background-color: var(--dark-blue-color);
+    padding: 20px 10px;
+    color:var(--white-color);
+    display: flex;
+    flex-direction: column;
+}
+.blog .content .date{
+    margin-bottom: 10px;
+}
+.blog .content h5{
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+}
+@media (min-width:576px){
+    .blog-cont{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .blog1{
+        width: 97%;
+        margin: 0 auto 20px;
+    }
+    .blog2,.blog3,.blog4,.blog5{
+        width: 47%;
+        margin:0 auto 20px;
+    }
+} 
+@media(min-width:992px){
+    .blog-section h3{
+        text-align: left;
+        font-size: 2.5rem;
+        margin:0 auto 60px 0;
+        padding: 0 10px;
+    }
+    .blog-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "blog1 blog2 blog3"
+                            "blog1 blog4 blog5";
+    }
+    .blog{
+        width: fit-content;
+        margin: 0 20px 20px 0;
+    }
+    .blog1{
+        grid-area: blog1;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog1 .content{
+        flex: 2;
+    }
+    .blog1 .content h5{
+        margin-bottom: auto;
+    }
+    .blog2{
+        grid-area: blog2;
+    }
+    .blog3{
+        grid-area: blog3;
+    }
+    .blog4{
+        grid-area: blog4;
+    }
+    .blog5{
+        grid-area: blog5;
+    }
+
+}

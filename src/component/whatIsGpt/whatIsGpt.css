@@ -1,0 +1,70 @@
+.gpt{
+    margin-bottom: 80px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 50px 20px;
+    position: relative;
+    background: radial-gradient(circle at 100% 100%, #81afdd9d 0%, #002853 30%);
+}
+.gpt::after{
+    width: 100%;
+    height:100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 0% 0%, #81afdd71 0%, #00285345 30%);
+}
+.gpt .define{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.gpt h4{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.gpt p{
+    font-size: 0.8rem;
+    color: var(--light-blue-color);
+}
+.gpt .heading{
+    margin-bottom: 60px;
+}
+.gpt .heading h3{
+    font-size: 1.5rem;
+    width: 70%;
+    font-weight: 600;
+}
+.gpt .heading p{
+    margin-left: auto;
+    width: fit-content;
+    font-size: 0.7rem;
+    margin-top: -30px;
+}
+.gpt .library{
+    margin-bottom: 30px;
+}
+@media (min-width:992px){
+    .gpt .define{
+        flex-direction: row;
+        margin-bottom: 70px;
+    }
+    .gpt .define h4{
+        flex: 1;
+    }
+    .gpt .define p{
+        flex: 3;
+    }
+    .gpt .heading{
+        margin-bottom: 90px;
+        padding: 0 60px;
+    }
+    .gpt .library-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .gpt .library{
+        width: 30%;
+    }
+}

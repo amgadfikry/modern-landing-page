@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+
+}
+:root{
+    font-size: calc(0.5em + 1vw);
+    --orange-color:#FF4820;
+    --purple-gradient-color:#AE67FA;
+    --orange-gradient-color:#F49867;
+    --white-color:#ffffff;
+    --light-blue-color:#81AFDD;
+    --dark-blue-color:#052D56;
+    --middle-blue-color:#042C54;
+    --gray-color:#686C75;
+    --black-color:#000000;
+    --background-color:#040C18;
+    --background-gradient-color:#002853;
+}
+body{
+    background-color: var(--background-color);
+}
+.container{
+    width: 100%;
+}
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+        margin: auto;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+        margin: auto;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+        margin: auto;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+@media (min-width:1400px){
+    .container{
+        max-width: 1320px;
+        margin: auto;
+    }
+}
+.btn{
+    background-color: var(--orange-color);
+    padding: 7px 20px;
+    font-size: 0.9rem;
+    color: var(--white-color);
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.text-color{
+    background:-moz-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%); 
+    background:-webkit-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:-o-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:-ms-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.h4-color{
+    position: relative;
+    color: var(--white-color);
+    padding: 7px 0;
+    width: fit-content;
+}
+.h4-color::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background:-moz-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%); 
+    background:-webkit-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:-o-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:-ms-linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    background:linear-gradient(90deg, var(--purple-gradient-color) 0%, var(--orange-gradient-color) 100%);
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
